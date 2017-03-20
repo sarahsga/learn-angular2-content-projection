@@ -1,3 +1,25 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <!--using form component for registration of user-->
+  <app-form>
+    <!--content projected within the selector opening and closing tags-->
+    <div class="form-group agreement">
+    <input
+      ngModel
+      #terms="ngModel"
+      name="terms"
+      type="checkbox"> I agree to the terms
+    </div>
+
+    <h4 class="title bg-warning">Register Now!!</h4>
+    <button class="btn btn-warning">Register</button>
+  </app-form>
+
+  <div class="divider"> -------------------------------------------------------------------------------------------------------- </div>
+
+  <!--reusing form component for Sign in .. with login-relevant content projected to it-->
+  <app-form>
+    <h4 class="title bg-primary">Have an account? Sign In below:</h4>
+    <button class="btn btn-primary">Sign In</button>
+  </app-form>
+
+</div>
